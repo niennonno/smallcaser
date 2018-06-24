@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB6EF7E529D3556CE8F7FC24 /* Pods_smallcaser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47081F042062580991993788 /* Pods_smallcaser.framework */; };
+		D33A04C420DCDDB60018C5F4 /* UIStoryboard+Gen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A04C320DCDDB60018C5F4 /* UIStoryboard+Gen.swift */; };
+		D33A04C620DCDDC60018C5F4 /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A04C520DCDDC60018C5F4 /* UIImage+Assets.swift */; };
+		D33A04CA20DCDF230018C5F4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A04C920DCDF230018C5F4 /* Constants.swift */; };
+		D3CCC39D20DD2F0E00E71659 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCC39C20DD2F0E00E71659 /* ImageCollectionViewCell.swift */; };
 		D3D2FED020DCD9E900BC41B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D2FECF20DCD9E900BC41B8 /* AppDelegate.swift */; };
 		D3D2FED220DCD9E900BC41B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D2FED120DCD9E900BC41B8 /* ViewController.swift */; };
 		D3D2FED520DCD9E900BC41B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D2FED320DCD9E900BC41B8 /* Main.storyboard */; };
 		D3D2FED720DCD9EB00BC41B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D2FED620DCD9EB00BC41B8 /* Assets.xcassets */; };
 		D3D2FEDA20DCD9EB00BC41B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D2FED820DCD9EB00BC41B8 /* LaunchScreen.storyboard */; };
+		D3DE56A220DE351E00D8EF83 /* smallcase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE56A120DE351E00D8EF83 /* smallcase.swift */; };
+		D3E6410520DE70D900AEEBBE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E6410420DE70D900AEEBBE /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47081F042062580991993788 /* Pods_smallcaser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smallcaser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		710D3FB45377D8ED5AAFB6E7 /* Pods-smallcaser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smallcaser.release.xcconfig"; path = "Pods/Target Support Files/Pods-smallcaser/Pods-smallcaser.release.xcconfig"; sourceTree = "<group>"; };
+		D33A04C320DCDDB60018C5F4 /* UIStoryboard+Gen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Gen.swift"; sourceTree = "<group>"; };
+		D33A04C520DCDDC60018C5F4 /* UIImage+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Assets.swift"; sourceTree = "<group>"; };
+		D33A04C920DCDF230018C5F4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D3CCC39C20DD2F0E00E71659 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		D3D2FECC20DCD9E900BC41B8 /* smallcaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smallcaser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D2FECF20DCD9E900BC41B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D2FED120DCD9E900BC41B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +35,9 @@
 		D3D2FED620DCD9EB00BC41B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3D2FED920DCD9EB00BC41B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3D2FEDB20DCD9EB00BC41B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3DE56A120DE351E00D8EF83 /* smallcase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smallcase.swift; sourceTree = "<group>"; };
+		D3E6410420DE70D900AEEBBE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F3F51006B3794A8C15562ADE /* Pods-smallcaser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smallcaser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smallcaser/Pods-smallcaser.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB6EF7E529D3556CE8F7FC24 /* Pods_smallcaser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51D4563147F55D48A18D79E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47081F042062580991993788 /* Pods_smallcaser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D33A04C020DCDCCE0018C5F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D33A04C120DCDCED0018C5F4 /* Storyboards */,
+				D3D2FED620DCD9EB00BC41B8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D33A04C120DCDCED0018C5F4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D3D2FED320DCD9E900BC41B8 /* Main.storyboard */,
+				D3D2FED820DCD9EB00BC41B8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D33A04C220DCDD950018C5F4 /* Swiftgen */ = {
+			isa = PBXGroup;
+			children = (
+				D33A04C320DCDDB60018C5F4 /* UIStoryboard+Gen.swift */,
+				D33A04C520DCDDC60018C5F4 /* UIImage+Assets.swift */,
+			);
+			path = Swiftgen;
+			sourceTree = "<group>";
+		};
+		D33A04C820DCDDF40018C5F4 /* Swift Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3D2FED120DCD9E900BC41B8 /* ViewController.swift */,
+				D3E6410420DE70D900AEEBBE /* DetailViewController.swift */,
+				D3DE56A120DE351E00D8EF83 /* smallcase.swift */,
+				D33A04C920DCDF230018C5F4 /* Constants.swift */,
+				D3CCC39C20DD2F0E00E71659 /* ImageCollectionViewCell.swift */,
+			);
+			path = "Swift Files";
+			sourceTree = "<group>";
+		};
 		D3D2FEC320DCD9E900BC41B8 = {
 			isa = PBXGroup;
 			children = (
 				D3D2FECE20DCD9E900BC41B8 /* smallcaser */,
 				D3D2FECD20DCD9E900BC41B8 /* Products */,
+				E78368A36BE15E37225B5FC1 /* Pods */,
+				51D4563147F55D48A18D79E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +121,21 @@
 			isa = PBXGroup;
 			children = (
 				D3D2FECF20DCD9E900BC41B8 /* AppDelegate.swift */,
-				D3D2FED120DCD9E900BC41B8 /* ViewController.swift */,
-				D3D2FED320DCD9E900BC41B8 /* Main.storyboard */,
-				D3D2FED620DCD9EB00BC41B8 /* Assets.xcassets */,
-				D3D2FED820DCD9EB00BC41B8 /* LaunchScreen.storyboard */,
+				D33A04C820DCDDF40018C5F4 /* Swift Files */,
 				D3D2FEDB20DCD9EB00BC41B8 /* Info.plist */,
+				D33A04C020DCDCCE0018C5F4 /* Resources */,
+				D33A04C220DCDD950018C5F4 /* Swiftgen */,
 			);
 			path = smallcaser;
+			sourceTree = "<group>";
+		};
+		E78368A36BE15E37225B5FC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3F51006B3794A8C15562ADE /* Pods-smallcaser.debug.xcconfig */,
+				710D3FB45377D8ED5AAFB6E7 /* Pods-smallcaser.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3D2FEDE20DCD9EB00BC41B8 /* Build configuration list for PBXNativeTarget "smallcaser" */;
 			buildPhases = (
+				8BDE7FCF2F7BD0D545727947 /* [CP] Check Pods Manifest.lock */,
 				D3D2FEC820DCD9E900BC41B8 /* Sources */,
 				D3D2FEC920DCD9E900BC41B8 /* Frameworks */,
 				D3D2FECA20DCD9E900BC41B8 /* Resources */,
+				3E158DECAA1D08565FF222FC /* [CP] Embed Pods Frameworks */,
+				D33A04BF20DCDC3F0018C5F4 /* Swiftgen Run Script */,
 			);
 			buildRules = (
 			);
@@ -130,13 +207,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E158DECAA1D08565FF222FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-smallcaser/Pods-smallcaser-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftCharts/SwiftCharts.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCharts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smallcaser/Pods-smallcaser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BDE7FCF2F7BD0D545727947 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smallcaser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D33A04BF20DCDC3F0018C5F4 /* Swiftgen Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftgen Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"$PODS_ROOT\"/SwiftGen/bin/swiftgen >/dev/null; then\nswiftgen\n\"$PODS_ROOT\"/SwiftGen/bin/swiftgen xcassets -t swift3 --output \"${SRCROOT}/smallcaser/Swiftgen/UIImage+Assets.swift\" \"${SRCROOT}/smallcaser/Resources/Assets.xcassets\"\n\"$PODS_ROOT\"/SwiftGen/bin/swiftgen storyboards -t swift3 --output \"${SRCROOT}/smallcaser/Swiftgen/UIStoryboard+Gen.swift\" \"${SRCROOT}/smallcaser/Resources/Storyboards/\"\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D3D2FEC820DCD9E900BC41B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3CCC39D20DD2F0E00E71659 /* ImageCollectionViewCell.swift in Sources */,
+				D33A04CA20DCDF230018C5F4 /* Constants.swift in Sources */,
+				D3DE56A220DE351E00D8EF83 /* smallcase.swift in Sources */,
 				D3D2FED220DCD9E900BC41B8 /* ViewController.swift in Sources */,
 				D3D2FED020DCD9E900BC41B8 /* AppDelegate.swift in Sources */,
+				D33A04C620DCDDC60018C5F4 /* UIImage+Assets.swift in Sources */,
+				D33A04C420DCDDB60018C5F4 /* UIStoryboard+Gen.swift in Sources */,
+				D3E6410520DE70D900AEEBBE /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,15 +422,13 @@
 		};
 		D3D2FEDF20DCD9EB00BC41B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F51006B3794A8C15562ADE /* Pods-smallcaser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 526ZQGMLUA;
 				INFOPLIST_FILE = smallcaser/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niennonno.smallcaser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +438,13 @@
 		};
 		D3D2FEE020DCD9EB00BC41B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 710D3FB45377D8ED5AAFB6E7 /* Pods-smallcaser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 526ZQGMLUA;
 				INFOPLIST_FILE = smallcaser/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niennonno.smallcaser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
