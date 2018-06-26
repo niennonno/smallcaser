@@ -38,9 +38,20 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let scId = smallcaseIds[indexPath.item]
      
-        let detailViewController = StoryboardScene.Main.detailViewController.instantiate()
-        self.navigationController?.pushViewController(detailViewController, animated: true)
-
+        Smallcase.getSmallcase(scId) { (smallCase, error) in
+            if error != nil {
+                
+            } else {
+                let smallcaseId = smallcaseIds[indexPath.item]
+                let detailViewController = StoryboardScene.Main.detailViewController.instantiate()
+                detailViewController.smallCase = smallCase
+                detailViewController.imageUrl = URL(string: imageUrl+smallcaseId+".png")
+                self.navigationController?.pushViewController(detailViewController, animated: true)
+            }
+        }
+        
     }
 }
