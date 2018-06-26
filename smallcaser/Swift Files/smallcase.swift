@@ -57,6 +57,7 @@ class Smallcase: NSObject {
                     }
                 case .failure(let error):
                     print(error)
+                    showAlertViewController(message: error.localizedDescription)
                     completion(nil, error)
                 }
         }
@@ -99,6 +100,7 @@ class ChartData: NSObject {
                     }
                 case .failure(let error):
                     print(error)
+                    showAlertViewController(message: error.localizedDescription)
                     completion(nil, error)
 
                 }
