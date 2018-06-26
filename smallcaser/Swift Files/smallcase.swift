@@ -52,18 +52,59 @@ class Smallcase: NSObject {
                         print(json)
                         let smallCase = Smallcase(fromJson: json["data"])
                         completion(smallCase, nil)
-                    } catch {
-                        return
+                    } catch (let error){
+                        completion(nil, error)
                     }
                 case .failure(let error):
                     print(error)
+                    completion(nil, error)
                 }
         }
     }
 }
 
 class ChartData: NSObject {
+    var date: Date!
+    var index: Double!
     
+    init(fromJson json: JSON?) {
+        super.init()
+        guard let json = json else { return }
+        date = Date.getDate(json["date"].stringValue)
+        index = json["index"].doubleValue
+    }
+    
+    static func getChartData(_ scId: String, completion: @escaping(_ chartData: [ChartData]?,_ error: Error?) -> Void) {
+        let url = histogramUrl + scId
+        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil)
+            .responseJSON { (response) in
+                switch response.result {
+                case .success:
+                    guard let data = response.data else {
+                        return
+                    }
+                    do {
+                        let json = try JSON(data: data)
+                        print(json)
+                        if let jsonArray = json["data"]["points"].array {
+                            var chartData = [ChartData]()
+                            for json in jsonArray {
+                                let data = ChartData(fromJson: json)
+                                chartData.append(data)
+                            }
+                            completion(chartData, nil)
+                        }
+                    } catch (let error){
+                        completion(nil, error)
+                    }
+                case .failure(let error):
+                    print(error)
+                    completion(nil, error)
+
+                }
+        }
+        
+    }
 }
 
 

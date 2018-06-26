@@ -14,4 +14,15 @@ let baseUrl = "https://api-dev.smallcase.com/smallcases/"
 
 let imageUrl = "https://www.smallcase.com/images/smallcases/187/"
 
+let histogramUrl = "https://api-dev.smallcase.com/smallcases/historical?scid="
+
 //let cache = URLCache().getCachedResponse(for: <#T##URLSessionDataTask#>, completionHandler: <#T##(CachedURLResponse?) -> Void#>)
+
+extension Date {
+    static func getDate(_ string: String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.000Z"         //2014-06-26T00:00:00.000Z
+        let dateObj = dateFormatter.date(from: string)
+        return dateObj ?? Date()
+    }
+}

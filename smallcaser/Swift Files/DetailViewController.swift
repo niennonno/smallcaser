@@ -22,7 +22,8 @@ class DetailViewController: UIViewController {
     var smallCase: Smallcase!
     var imageUrl: URL!
     var lineChartEntry = [ChartDataEntry]()
-
+    var scId: String!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationItem.backBarButtonItem?.title = ""
@@ -33,7 +34,6 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Summary"
         setupView()
-        // Do any additional setup after loading the view.
     }
     
     func setupView() {
@@ -48,12 +48,48 @@ class DetailViewController: UIViewController {
             data: data,
             options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html],
             documentAttributes: nil)
-        // suppose we have an UILabel, but any element with NSAttributedString will do
         rantionaleTextView.attributedText = attrStr
         getData()
     }
     
     func getData() {
+        ChartData.getChartData(scId) { (charData, error) in
+            if error != nil {
+            } else {
+                self.fillData(charData!)
+            }
+        }
+    }
+    
+    func fillData(_ charData: [ChartData]) {
+        for data in charData {
+
+            let chartData = ChartDataEntry(x: data.date.timeIntervalSince1970, y: data.index)
+            lineChartEntry.append(chartData)
+        }
+        let line = LineChartDataSet(values: lineChartEntry, label: "Values")
+        line.drawCirclesEnabled = false
+        line.colors = [.black]
+        let data = LineChartData()
+        data.addDataSet(line)
+        chartView.data = data
+        chartView.chartDescription?.text = ""
+        chartView.xAxis.labelPosition = .bottom
+        chartView.isUserInteractionEnabled = true
+        chartView.xAxis.valueFormatter = DateValueFormatter()
+    }
+}
+
+public class DateValueFormatter: NSObject, IAxisValueFormatter {
+    private let dateFormatter = DateFormatter()
+    
+    override init() {
+        super.init()
+        dateFormatter.dateFormat = "dd/MM/yy"
+    }
+    
+    public func stringForValue(_ value: Double, axis: AxisBase?) -> String {
         
+        return dateFormatter.string(from: Date(timeIntervalSince1970: value))
     }
 }

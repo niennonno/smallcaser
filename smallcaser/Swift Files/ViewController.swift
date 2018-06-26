@@ -45,10 +45,10 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
             if error != nil {
                 
             } else {
-                let smallcaseId = smallcaseIds[indexPath.item]
                 let detailViewController = StoryboardScene.Main.detailViewController.instantiate()
                 detailViewController.smallCase = smallCase
-                detailViewController.imageUrl = URL(string: imageUrl+smallcaseId+".png")
+                detailViewController.imageUrl = URL(string: imageUrl+scId+".png")
+                detailViewController.scId = scId
                 self.navigationController?.pushViewController(detailViewController, animated: true)
             }
         }
